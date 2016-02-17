@@ -14,6 +14,7 @@ void CMenuState::Init()
 #if GSM_DEBUG_MODE
 	cout << "CMenuState::Init\n" << endl;
 #endif
+	//Sound.mainMenuBGM();
 }
 
 void CMenuState::Init(const int width, const int height)
@@ -130,6 +131,8 @@ void CMenuState::Update(CGameStateManager* theGSM)
 {
 #if GSM_DEBUG_MODE
 	cout << "CMenuState::Update\n" << endl;
+	
+	//Sound.adjustVol();
 #endif
 }
 

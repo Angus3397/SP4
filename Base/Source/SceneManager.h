@@ -9,7 +9,8 @@
 #include "Light.h"
 #include "Minimap.h"
 #include "PlayInfo3PV.h"
-
+#include "SoundManager.h"
+#include <stdio.h>
 
 const float SKYBOXSIZE = 1000.f;
 
@@ -118,6 +119,8 @@ public:
 	void RenderLights();
 	void RenderGround();
 	void RenderSkybox();
+
+	CSoundManager Sound;
 
 	enum WEAPON_ACTION
 	{

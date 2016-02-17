@@ -1,80 +1,10 @@
-﻿Build started 16/2/2016 9:30:02 AM.
-     1>Project "C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\Base\Base.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 17/2/2016 9:22:48 AM.
+     1>Project "C:\Users\angus_000\Desktop\Documents\SP4\Base\Base.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\/Common/Source" /I"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\/glew/include" /I"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\/glfw/include" /ZI /nologo /W3 /WX- /Od /Oy- /D _VARIADIC_MAX=10 /D WIN32 /D _DEBUG /D _CONSOLE /D _CRTDBG_MAP_ALLOC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\Application.cpp Source\Camera.cpp Source\Camera3.cpp Source\Enemy.cpp Source\GameStateManager.cpp Source\Goodies.cpp Source\GoodiesFactory.cpp Source\IntroState.cpp Source\LoadOBJ.cpp Source\LoadTGA.cpp Source\main.cpp Source\Map.cpp Source\MenuState.cpp Source\Mesh.cpp Source\MeshBuilder.cpp Source\Minimap.cpp Source\PlayerInfo.cpp Source\PlayInfo3PV.cpp Source\PlayState.cpp Source\SceneManager.cpp Source\SceneManager2D.cpp Source\shader.cpp Source\Strategy.cpp Source\Strategy_Kill.cpp Source\TreasureChest.cpp Source\Utility.cpp
-         Utility.cpp
-         TreasureChest.cpp
-         Strategy_Kill.cpp
-         Strategy.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\strategy.cpp(22): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-         shader.cpp
-         SceneManager2D.cpp
-         SceneManager.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\scenemanager.cpp(274): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\scenemanager.cpp(574): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-         PlayState.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playstate.cpp(142): warning C4805: '==' : unsafe mix of type 'const int' and type 'bool' in operation
-         PlayInfo3PV.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(82): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(88): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(94): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(143): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(149): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(155): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(200): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(204): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(208): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(210): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(230): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(238): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(246): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playinfo3pv.cpp(254): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
-         PlayerInfo.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(80): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(86): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(145): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(151): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(230): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(237): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(244): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(246): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(269): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\playerinfo.cpp(300): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-         Minimap.cpp
-         MeshBuilder.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\meshbuilder.cpp(746): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\meshbuilder.cpp(752): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\meshbuilder.cpp(758): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-         Mesh.cpp
-         MenuState.cpp
-         Map.cpp
-         main.cpp
-         LoadTGA.cpp
-         LoadOBJ.cpp
-         IntroState.cpp
-         GoodiesFactory.cpp
-         Generating Code...
-         Compiling...
-         Goodies.cpp
-         GameStateManager.cpp
-         Enemy.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(28): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(34): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(40): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(41): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(51): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(57): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(63): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\enemy.cpp(69): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-         Camera3.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\camera3.cpp(416): warning C4244: '+=' : conversion from 'const double' to 'float', possible loss of data
-         Camera.cpp
-         Application.cpp
-     1>c:\users\teo\desktop\new folder\new folder\sp4\sp4\sp4 framework\base\source\application.cpp(14): warning C4005: '_CRTDBG_MAP_ALLOC' : macro redefinition
-                 command-line arguments :  see previous definition of '_CRTDBG_MAP_ALLOC'
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\angus_000\Desktop\Documents\SP4\/Common/Source /IC:\Users\angus_000\Desktop\Documents\SP4\/glew/include /IC:\Users\angus_000\Desktop\Documents\SP4\/glfw/include /IC:\Users\angus_000\Desktop\Documents\SP4\/irrklang/include /ZI /nologo /W3 /WX- /Od /Oy- /D _VARIADIC_MAX=10 /D WIN32 /D _DEBUG /D _CONSOLE /D _CRTDBG_MAP_ALLOC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\SoundManager.cpp
+         SoundManager.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\Debug\Base.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\Debug" /LIBPATH:"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\/glfw/lib-msvc100" /LIBPATH:"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\/glew/lib" Common.lib winmm.lib opengl32.lib glu32.lib glew32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\Debug\Base.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\Debug\Base.lib" /MACHINE:X86 Debug\Application.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\angus_000\Desktop\Documents\SP4\Debug /LIBPATH:"C:\Users\angus_000\Desktop\Documents\SP4\/glfw/lib-msvc100" /LIBPATH:C:\Users\angus_000\Desktop\Documents\SP4\/glew/lib /LIBPATH:C:\Users\angus_000\Desktop\Documents\SP4\/irrklang/lib Common.lib winmm.lib opengl32.lib glu32.lib glew32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.lib" /MACHINE:X86 Debug\Application.obj
          Debug\Camera.obj
          Debug\Camera3.obj
          Debug\Enemy.obj
@@ -96,15 +26,16 @@
          Debug\SceneManager.obj
          Debug\SceneManager2D.obj
          Debug\shader.obj
+         Debug\SoundManager.obj
          Debug\Strategy.obj
          Debug\Strategy_Kill.obj
          Debug\TreasureChest.obj
          Debug\Utility.obj
      1>Application.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
      1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-         Base.vcxproj -> C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\Debug\Base.exe
-     1>Done Building Project "C:\Users\teo\Desktop\New folder\New folder\SP4\SP4\SP4 Framework\Base\Base.vcxproj" (Rebuild target(s)).
+         Base.vcxproj -> C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.exe
+     1>Done Building Project "C:\Users\angus_000\Desktop\Documents\SP4\Base\Base.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:11.85
+Time Elapsed 00:00:03.13

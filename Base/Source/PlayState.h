@@ -4,6 +4,7 @@
 #include "SceneManager.h"
 #include "SceneManager2D.h"
 #include "timer.h"
+#include "SoundManager.h"
 
 //Include GLEW
 #include <GL/glew.h>
@@ -41,6 +42,7 @@ protected:
 private:
 	static CPlayState thePlayState;
 	int counter;
+	CSoundManager Sound;
 
 	//Declare variables to store the last and current mouse position
 	double mouse_last_x, mouse_last_y, mouse_diff_x, mouse_diff_y;

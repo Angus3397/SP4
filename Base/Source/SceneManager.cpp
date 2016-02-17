@@ -209,8 +209,7 @@ void CSceneManager::Init()
 	m_cAvatar->SetModel(MeshBuilder::GenerateCone("cone", Color(0.5f, 1, 0.3f), 36, 10.f, 10.f));
 
 	
-
-	
+	Sound.mainMenuBGM();
 
 	// Projection matrix : 45° Field of View, 4:3 ratio, display range : 0.1 unit <-> 1000 units
 	Mtx44 perspective;
@@ -276,7 +275,6 @@ void CSceneManager::Update(double dt)
 	m_cAvatar->Update(dt);
 	camera.UpdatePosition( m_cAvatar->GetPosition(), m_cAvatar->GetDirection() );
 	//camera.Update(dt);
-
 
 	fps = (float)(1.f / dt);
 }

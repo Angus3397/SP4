@@ -1,6 +1,7 @@
 #pragma once
 
 #include "gamestate.h"
+#include "SoundManager.h"
 
 class CMenuState : public CGameState
 {
@@ -29,4 +30,5 @@ protected:
 
 private:
 	static CMenuState theMenuState;
+	CSoundManager Sound;
 };
