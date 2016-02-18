@@ -13,7 +13,7 @@ public:
 	float H;									// Estimated distance to goal (Heuristic)
 
 	CSearchCell(void) : parent(0){}
-	CSearchCell(int x, int z, CSearchCell *_parent = 0) : m_xCoord(x), m_zCoord(z),
+	CSearchCell(int x, int z, CSearchCell *_parent = NULL) : m_xCoord(x), m_zCoord(z),
 		parent(_parent), m_id(z * WORLD_SIZE + z), G(0), H(0) {};
 
 	float GetF() { return G + H; }				// Total value of accmumlated dist & heuristic

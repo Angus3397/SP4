@@ -22,7 +22,7 @@ void CSoundManager::adjustVol()
 	static bool pressedLeft = false;
 	if (Application::IsKeyPressed(VK_LEFT) && pressedLeft == false)
 	{
-		volume -= 0.01f;
+		volume -= 0.1f;
 		pressedLeft = true;
 		if (volume <= 0)
 		{
@@ -38,7 +38,7 @@ void CSoundManager::adjustVol()
 	static bool pressedRight = false;
 	if (Application::IsKeyPressed(VK_RIGHT) && pressedRight == false)
 	{
-		volume += 0.01f;
+		volume += 0.1f;
 		pressedRight = true;
 		if (volume >= 1)
 		{

@@ -206,6 +206,7 @@ Application::~Application()
 		delete theGSM;
 		theGSM = NULL;
 	}
+	_CrtDumpMemoryLeaks();
 }
 
 /********************************************************************************
@@ -327,6 +328,6 @@ void Application::Exit()
 	//Finalize and clean up GLFW
 	glfwTerminate();
 
-	std::cout << _CrtDumpMemoryLeaks();
+	//std::cout << _CrtDumpMemoryLeaks();
 	//std::cout << _CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_DEBUG);
 }
