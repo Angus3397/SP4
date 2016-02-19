@@ -28,7 +28,6 @@ CSceneManager::CSceneManager(const int m_window_width, const int m_window_height
 
 CSceneManager::~CSceneManager(void)
 {
-	
 	if (m_cAvatar)
 	{
 		delete m_cAvatar;

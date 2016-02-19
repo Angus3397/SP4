@@ -12,11 +12,21 @@
 #include "Vector2.h"
 #include "PlayerInfo.h"
 #include "Enemy.h"
+#include "Player.h"
+#include "Save.h"
+#include "SpriteAnimation.h"
+
+#include "Highscore.h"
+#include "HighscoreData.h"
 
 // Goodies and Goodies Factory
 #include "GoodiesFactory.h"
 #include "Goodies.h"
 #include "TreasureChest.h"
+
+//grid system and grid class
+#include "GridSystem.h"
+
 
 class CSceneManager2D : public Scene
 {
@@ -48,31 +58,61 @@ class CSceneManager2D : public Scene
 		GEO_TILE_SAFEZONE,
 		GEO_TILEENEMY_FRAME0,
 		GEO_TILE_TREASURECHEST,
+		GEO_SPRITE_ANIMATION,
 		GEO_OBJECT,
+
+		GEO_MENU,
+		GEO_SELECT,
+		GEO_INSTRUCTION,
+		GEO_HIGHSCORE,
+		// TEMPO NAME
+		GEO_OPTION1,
+		GEO_OPTION2,
+		GEO_OPTION3,
+		GEO_OPTION4,
+
 		GEO_TEXT,
 		NUM_GEOMETRY,
 	};
 
 public:
 	CSceneManager2D();
+	CSceneManager2D(const int m_window_width, const int m_window_height);
 	~CSceneManager2D();
 
 	virtual void Init();
 	virtual void Update(double dt);
 	// Update Camera status
 	virtual void UpdateCameraStatus(const unsigned char key, const bool status = true);
-	// Update Weapon status
-	virtual void UpdateWeaponStatus(const unsigned char key);
+	// Update mouse status
+	virtual void UpdateMouseStatus(const unsigned char key);
 	virtual void Render();
 	virtual void Exit();
 
 	void RenderTextOnScreen(Mesh* mesh, std::string text, Color color, float size, float x, float y);
 	void RenderBackground();
+	void RenderMainMenu();
+	void RenderHighscore();
+	void RenderInstructions();
+	void RenderOption();
 	void Render2DMesh(Mesh *mesh, const bool enableLight, const int size=1, const int x=0, const int y=0, const bool rotate=false, const bool flip=false);
+
+	void RenderGridSystem();
+
+	// Menu States
+	bool PlaySelect;
+	bool InstructionSelect;
+	bool HighscoreSelect;
+	bool OptionSelect;
+	bool ExitSelect;
+
+	void AddHighscore();
+	HighscoreData theScore[5];
 
 	enum WEAPON_ACTION
 	{
 		WA_NIL = 0,
+		WA_LEFT_CLICKED,
 		WA_FIRE,
 		WA_RELOAD,
 		WA_CHANGEWEAPON,
@@ -80,6 +120,11 @@ public:
 	};
 
 private:
+	Player* m_player;
+	Save* m_save;
+	SpriteAnimation *m_spriteAnimation;
+
+
 	unsigned m_vertexArrayID;
 	Mesh* meshList[NUM_GEOMETRY];
 	unsigned m_programID;
@@ -95,6 +140,16 @@ private:
 
 
 	float fps;
+
+	//grid system and grids
+	GridSystem* Playfield;
+
+	//world height and width
+	float m_worldHeight;
+	float m_worldWidth;
+	//window height and width
+	int m_windowHeight;
+	int m_windowWidth;
 	/*
 	// Handle to the minimap
 	CMinimap* m_cMinimap;

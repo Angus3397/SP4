@@ -2,144 +2,149 @@
 using namespace std;
 
 #include "GameStateManager.h"
-#include "introstate.h"
+#include "highscorestate.h"
+#include "optionstate.h"
 #include "playstate.h"
 #include "gamestate.h"
 #include "menustate.h"
+#include "instructionstate.h"
 
 CMenuState CMenuState::theMenuState;
 
 void CMenuState::Init()
 {
-#if GSM_DEBUG_MODE
-	cout << "CMenuState::Init\n" << endl;
-#endif
+	theScene = new CSceneManager2D(800, 600);
+	theScene->Init();
+	Select = 1;
 }
 
 void CMenuState::Init(const int width, const int height)
 {
-#if GSM_DEBUG_MODE
-	cout << "CMenuState::Init\n" << endl;
-#endif
+	theScene = new CSceneManager2D(800, 600);
+	theScene->Init();
+	Select = 1;
 }
 
 void CMenuState::Cleanup()
 {
-#if GSM_DEBUG_MODE
-	cout << "CMenuState::Cleanup\n" << endl;
-#endif
+	theScene->Exit();
+	delete theScene;
+	theScene = NULL;
 }
 
 void CMenuState::Pause()
 {
-#if GSM_DEBUG_MODE
-	cout << "CMenuState::Pause\n" << endl;
-#endif
 }
 
 void CMenuState::Resume()
 {
-#if GSM_DEBUG_MODE
-	cout << "CMenuState::Resume\n" << endl;
-#endif
 }
 
 void CMenuState::HandleEvents(CGameStateManager* theGSM)
 {
-#if GSM_DEBUG_MODE
-	//int m_iUserChoice = -1;
-
-	//do {
-	//	cout << "CMenuState: Choose one <0> Go to Intro State, <1> Go to Play State : " ;
-	//	cin >> m_iUserChoice;
-	//	cin.get();
-
-	//	switch (m_iUserChoice) {
-	//		case 0:
-	//			theGSM->ChangeState( CIntroState::Instance() );
-	//			break;
-
-	//		case 1:
-	//			theGSM->ChangeState( CPlayState::Instance() );
-	//			break;
-	//		default:
-	//			cout << "Invalid choice!\n";
-	//			m_iUserChoice = -1;
-	//			break;
-	//	}
-	//} while (m_iUserChoice == -1);
-#endif
 }
 
 void CMenuState::HandleEvents(CGameStateManager* theGSM, const unsigned char key, const bool status)
 {
-#if GSM_DEBUG_MODE
-	int m_iUserChoice = -1;
-
-	do {
-		cout << "CMenuState: Choose one <0> Go to Intro State, <1> Go to Play State : " ;
-		cin >> m_iUserChoice;
-		cin.get();
-
-		switch (m_iUserChoice) {
-			case 0:
-				theGSM->ChangeState( CIntroState::Instance() );
-				break;
-
-			case 1:
-				theGSM->ChangeState( CPlayState::Instance() );
-				break;
-			default:
-				cout << "Invalid choice!\n";
-				m_iUserChoice = -1;
-				break;
-		}
-	} while (m_iUserChoice == -1);
-#endif
 }
 
 void CMenuState::HandleEvents(CGameStateManager* theGSM, const double mouse_x, const double mouse_y,
-							  const int button_Left, const int button_Middle, const int button_Right)
+	const int button_Left, const int button_Middle, const int button_Right)
 {
-#if GSM_DEBUG_MODE
-	int m_iUserChoice = -1;
-
-	do {
-		cout << "CMenuState: Choose one <0> Go to Intro State, <1> Go to Play State : " ;
-		cin >> m_iUserChoice;
-		cin.get();
-
-		switch (m_iUserChoice) {
-			case 0:
-				theGSM->ChangeState( CIntroState::Instance() );
-				break;
-
-			case 1:
-				theGSM->ChangeState( CPlayState::Instance() );
-				break;
-			default:
-				cout << "Invalid choice!\n";
-				m_iUserChoice = -1;
-				break;
-		}
-	} while (m_iUserChoice == -1);
-#endif
 }
 
-void CMenuState::Update(CGameStateManager* theGSM) 
+void CMenuState::Update(CGameStateManager* theGSM)
 {
-#if GSM_DEBUG_MODE
-	cout << "CMenuState::Update\n" << endl;
-#endif
 }
 
 void CMenuState::Update(CGameStateManager* theGSM, const double m_dElapsedTime)
 {
+	if (Application::IsKeyPressed(VK_DOWN))
+	{
+		if (Select < 5) // Max. Number of Options
+		{
+			Select++;	// Move the cursor down
+			Sleep(150);
+			cout << Select << endl;
+		}
+	}
+	if (Application::IsKeyPressed(VK_UP))
+	{
+		if (Select >= 1) // Selection is not the first one.
+		{
+			Select--;
+			Sleep(150);
+			cout << Select << endl;
+		}
+	}
+
+	if (Select == 1) // Play
+	{
+		theScene->PlaySelect = true;
+		theScene->InstructionSelect = false;
+		theScene->HighscoreSelect = false;
+		theScene->OptionSelect = false;
+		theScene->ExitSelect = false;
+	}
+	else if (Select == 2) // Instructions
+	{
+		theScene->PlaySelect = false;
+		theScene->InstructionSelect = true;
+		theScene->HighscoreSelect = false;
+		theScene->OptionSelect = false;
+		theScene->ExitSelect = false;
+	}
+	else if (Select == 3) // Highscore
+	{
+		theScene->PlaySelect = false;
+		theScene->InstructionSelect = false;
+		theScene->HighscoreSelect = true;
+		theScene->OptionSelect = false;
+		theScene->ExitSelect = false;
+	}
+	else if (Select == 4) // Options
+	{
+		theScene->PlaySelect = false;
+		theScene->InstructionSelect = false;
+		theScene->HighscoreSelect = false;
+		theScene->OptionSelect = true;
+		theScene->ExitSelect = false;
+	}
+	else if (Select == 5) // Exit
+	{
+		theScene->PlaySelect = false;
+		theScene->InstructionSelect = false;
+		theScene->HighscoreSelect = false;
+		theScene->OptionSelect = false;
+		theScene->ExitSelect = true;
+	}
+
+	if (Application::IsKeyPressed(VK_RETURN) || Application::IsKeyPressed(VK_SPACE))
+	{
+		if (Select == 1)
+		{
+			theGSM->ChangeState(CPlayState::Instance());
+		}
+		if (Select == 2)
+		{
+			theGSM->ChangeState(CInstructionState::Instance());
+		}
+		if (Select == 3)
+		{
+			theGSM->ChangeState(CHighscoreState::Instance());
+		}
+		if (Select == 4)
+		{
+			theGSM->ChangeState(COptionState::Instance());
+		}
+		if (Select == 5)
+		{
+			theGSM->Quit();
+		}
+	}
 }
 
-void CMenuState::Draw(CGameStateManager* theGSM) 
+void CMenuState::Draw(CGameStateManager* theGSM)
 {
-#if GSM_DEBUG_MODE
-	cout << "CMenuState::Draw\n" << endl;
-#endif
+	theScene->RenderMainMenu();
 }

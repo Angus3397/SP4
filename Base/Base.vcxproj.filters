@@ -75,9 +75,6 @@
     <ClCompile Include="Source\Minimap.cpp">
       <Filter>2D</Filter>
     </ClCompile>
-    <ClCompile Include="Source\SceneManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\SceneManager2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -93,11 +90,41 @@
     <ClCompile Include="Source\MenuState.cpp">
       <Filter>Game State Management</Filter>
     </ClCompile>
-    <ClCompile Include="Source\IntroState.cpp">
-      <Filter>Game State Management</Filter>
-    </ClCompile>
     <ClCompile Include="Source\GameStateManager.cpp">
       <Filter>Game State Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LuaUsage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Save.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SpriteAnimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GridSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HighscoreState.cpp">
+      <Filter>Game State Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InstructionState.cpp">
+      <Filter>Game State Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OptionState.cpp">
+      <Filter>Game State Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Highscore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HighscoreData.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -167,9 +194,6 @@
     <ClInclude Include="Source\Minimap.h">
       <Filter>2D</Filter>
     </ClInclude>
-    <ClInclude Include="Source\SceneManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Source\SceneManager2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -185,14 +209,47 @@
     <ClInclude Include="Source\MenuState.h">
       <Filter>Game State Management</Filter>
     </ClInclude>
-    <ClInclude Include="Source\IntroState.h">
-      <Filter>Game State Management</Filter>
-    </ClInclude>
     <ClInclude Include="Source\GameStateManager.h">
       <Filter>Game State Management</Filter>
     </ClInclude>
     <ClInclude Include="Source\GameState.h">
       <Filter>Game State Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\lua.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LuaUsage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Save.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Player.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SpriteAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GridSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HighscoreState.h">
+      <Filter>Game State Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InstructionState.h">
+      <Filter>Game State Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OptionState.h">
+      <Filter>Game State Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Highscore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HighscoreData.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,8 +1,9 @@
 #pragma once
 
 #include "gamestate.h"
+#include "application.h"
 
-class CIntroState : public CGameState
+class CInstructionState : public CGameState
 {
 public:
 	void Init();
@@ -15,18 +16,19 @@ public:
 	void HandleEvents(CGameStateManager* theGSM);
 	void HandleEvents(CGameStateManager* theGSM, const unsigned char key, const bool status = true);
 	void HandleEvents(CGameStateManager* theGSM, const double mouse_x, const double mouse_y,
-							  const int button_Left, const int button_Middle, const int button_Right);
+		const int button_Left, const int button_Middle, const int button_Right);
 	void Update(CGameStateManager* theGSM);
 	void Update(CGameStateManager* theGSM, const double m_dElapsedTime);
 	void Draw(CGameStateManager* theGSM);
 
-	static CIntroState* Instance() {
-		return &theIntroState;
+	static CInstructionState* Instance() {
+		return &theInstructionState;
 	}
 
 protected:
-	CIntroState() { }
+	CInstructionState() { }
 
 private:
-	static CIntroState theIntroState;
+	static CInstructionState theInstructionState;
+	CSceneManager2D* theScene;
 };

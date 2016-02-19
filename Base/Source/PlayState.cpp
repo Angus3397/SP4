@@ -139,8 +139,17 @@ void CPlayState::HandleEvents(CGameStateManager* theGSM, const double mouse_x, c
 	//	}
 	//} while (m_iUserChoice == -1);
 #endif
-	if (button_Left == true)
-		scene->UpdateWeaponStatus(scene->WA_FIRE);
+	static bool Left_Clicked = false;
+	if (button_Left == true && !Left_Clicked)
+	{
+		scene->UpdateMouseStatus(scene->WA_LEFT_CLICKED);
+		Left_Clicked = true;
+	}
+	else if (button_Left == false && Left_Clicked)
+	{
+		Left_Clicked = false;
+	}
+		
 	/*else if (button_Right == true)
 		scene->UpdateWeaponStatus(scene->WA_FIRE_SECONDARY);*/
 }
@@ -164,7 +173,7 @@ void CPlayState::Update(CGameStateManager* theGSM, const double m_dElapsedTime)
 void CPlayState::Draw(CGameStateManager* theGSM)
 {
 #if GSM_DEBUG_MODE
-	cout << "CPlayState::Draw : " << counter << "\n" << endl;
+	//cout << "CPlayState::Draw : " << counter << "\n" << endl;
 #endif
 
 	// Render the scene
