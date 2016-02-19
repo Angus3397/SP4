@@ -87,3 +87,126 @@ CSearchCell* CPathFinding::GetNextCell()
 
 	return nextCell;
 }
+
+void CPathFinding::PathOpened(int x, int z, float newCost, CSearchCell *parent)
+{
+	/*if (CELL_BLOCKED)
+	{
+		return;
+	}*/
+
+	int id = z * WORLD_SIZE + x;
+
+	for (int i = 0; i < m_visitedList.size(); i++)
+	{
+		if (id == m_visitedList[i]->m_id)
+		{
+			return;
+		}
+	}
+
+	CSearchCell* newChild = new CSearchCell(x, z, parent);
+	newChild->G = newCost;
+	newChild->H = parent->ManhattanDist(m_goalCell);
+
+	for (int i = 0; i < m_openList.size(); i++)
+	{
+		if (id == m_openList[i]->m_id)
+		{
+			float newF = newChild->G + newCost + m_openList[i]->H;
+
+			if (m_openList[i]->GetF() > newF)
+			{
+				m_openList[i]->G = newChild->G + newCost;
+				m_openList[i]->parent = newChild;
+			}
+			else  // If newF is not better than current F
+			{
+				delete newChild;
+				return;
+			}
+		}
+	}
+	m_openList.push_back(newChild);
+}
+
+void CPathFinding::ContinuePath()
+{
+	if (m_openList.empty())
+	{
+		return;
+	}
+
+	CSearchCell* currentCell = GetNextCell();
+
+	if (currentCell->m_id == m_goalCell->m_id)
+	{
+		m_goalCell->parent = currentCell->parent;
+
+		CSearchCell* getPath;
+
+		for (getPath = m_goalCell; getPath != NULL; getPath = getPath->parent)	// Checks through m_goalCell to find shortest path & push to m_pathToGoal list
+		{
+			m_pathToGoal.push_back(new Vector3(getPath->m_xCoord, 0, getPath->m_zCoord));
+		}
+
+		m_foundGoal = true;
+		return;
+	}
+	else 
+	{
+		// Right Side
+		PathOpened(currentCell->m_xCoord + 1, currentCell->m_zCoord, currentCell->G + 1, currentCell);
+
+		// Left Side
+		PathOpened(currentCell->m_xCoord - 1, currentCell->m_zCoord, currentCell->G + 1, currentCell);
+
+		// Top
+		PathOpened(currentCell->m_xCoord, currentCell->m_zCoord + 1, currentCell->G + 1, currentCell);
+
+		// Bottom
+		PathOpened(currentCell->m_xCoord, currentCell->m_zCoord - 1, currentCell->G + 1, currentCell);
+
+		// Diagonals (if needed, remove otherwise)
+		// Left-Top Diagonal
+		PathOpened(currentCell->m_xCoord - 1, currentCell->m_zCoord + 1, currentCell->G + 1.414f, currentCell);
+
+		// Right-Top Diagonal
+		PathOpened(currentCell->m_xCoord + 1, currentCell->m_zCoord + 1, currentCell->G + 1.414f, currentCell);
+
+		// Left-Bottom Diagonal
+		PathOpened(currentCell->m_xCoord - 1, currentCell->m_zCoord - 1, currentCell->G + 1.414f, currentCell);
+
+		// Right-Bottom Diagonal
+		PathOpened(currentCell->m_xCoord + 1, currentCell->m_zCoord - 1, currentCell->G + 1.414f, currentCell);
+
+		for (int i = 0; i < m_openList.size(); i++)
+		{
+			if (currentCell->m_id == m_openList[i]->m_id)
+			{
+				m_openList.erase(m_openList.begin() + 1);
+			}
+		}
+	}
+}
+
+Vector3 CPathFinding::NextPathPos()	// Gets first position from the shortest path in the list
+{
+	int index = 1;
+
+	Vector3 nextPos;
+	nextPos.x = m_pathToGoal[m_pathToGoal.size() - index]->x;
+	nextPos.z = m_pathToGoal[m_pathToGoal.size() - index]->z;
+
+	Vector3 distance = nextPos;// -  AI's current pos;
+
+	if (index < m_pathToGoal.size())
+	{
+		if (distance.Length() /* < AI's radius */)
+		{
+			m_pathToGoal.erase(m_pathToGoal.end() - index);
+		}
+
+		return nextPos;
+	}
+}
