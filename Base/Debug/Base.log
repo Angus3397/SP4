@@ -1,11 +1,19 @@
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
 ﻿Build started 2/19/2016 2:01:02 PM.
      1>Project "C:\Users\Tammie\Desktop\SP4\Base\Base.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Tammie\Desktop\SP4\/Common/Source /IC:\Users\Tammie\Desktop\SP4\/glew/include /IC:\Users\Tammie\Desktop\SP4\/glfw/include /IC:\Users\Tammie\Desktop\SP4\/lua/include /ZI /nologo /W3 /WX- /Od /Oy- /D _VARIADIC_MAX=10 /D WIN32 /D _DEBUG /D _CONSOLE /D _CRTDBG_MAP_ALLOC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\Application.cpp Source\Camera.cpp Source\Camera3.cpp Source\Enemy.cpp Source\GameStateManager.cpp Source\Goodies.cpp Source\GoodiesFactory.cpp Source\Grid.cpp Source\GridSystem.cpp Source\Highscore.cpp Source\HighscoreData.cpp Source\HighscoreState.cpp Source\InstructionState.cpp Source\LoadOBJ.cpp Source\LoadTGA.cpp Source\LuaUsage.cpp Source\main.cpp Source\Map.cpp Source\MenuState.cpp Source\Mesh.cpp Source\MeshBuilder.cpp Source\Minimap.cpp Source\OptionState.cpp Source\Player.cpp Source\PlayerInfo.cpp Source\PlayInfo3PV.cpp Source\PlayState.cpp Source\Save.cpp Source\SceneManager2D.cpp Source\shader.cpp Source\SpriteAnimation.cpp Source\Strategy.cpp Source\Strategy_Kill.cpp Source\TreasureChest.cpp Source\Utility.cpp
+=======
+﻿Build started 19/2/2016 2:32:39 PM.
+     1>Project "C:\Users\angus_000\Desktop\Documents\SP4\Base\Base.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\angus_000\Desktop\Documents\SP4\/Common/Source /IC:\Users\angus_000\Desktop\Documents\SP4\/glew/include /IC:\Users\angus_000\Desktop\Documents\SP4\/glfw/include /IC:\Users\angus_000\Desktop\Documents\SP4\/irrklang/include /ZI /nologo /W3 /WX- /Od /Oy- /D _VARIADIC_MAX=10 /D WIN32 /D _DEBUG /D _CONSOLE /D _CRTDBG_MAP_ALLOC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\AI.cpp Source\Application.cpp Source\Camera.cpp Source\Camera3.cpp Source\Character.cpp Source\Enemy.cpp Source\GameStateManager.cpp Source\Goodies.cpp Source\GoodiesFactory.cpp Source\IntroState.cpp Source\LoadOBJ.cpp Source\LoadTGA.cpp Source\main.cpp Source\Map.cpp Source\MenuState.cpp Source\Mesh.cpp Source\MeshBuilder.cpp Source\Minimap.cpp Source\PathFinding.cpp Source\PlayerInfo.cpp Source\PlayInfo3PV.cpp Source\PlayState.cpp Source\SceneManager.cpp Source\SceneManager2D.cpp Source\shader.cpp Source\SoundManager.cpp Source\Strategy.cpp Source\Strategy_Kill.cpp Source\TreasureChest.cpp Source\Utility.cpp
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
          Utility.cpp
          TreasureChest.cpp
          Strategy_Kill.cpp
          Strategy.cpp
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
      1>c:\users\tammie\desktop\sp4\base\source\strategy.cpp(22): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
          SpriteAnimation.cpp
      1>c:\users\tammie\desktop\sp4\base\source\spriteanimation.cpp(26): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
@@ -58,6 +66,62 @@
      1>c:\users\tammie\desktop\sp4\base\source\meshbuilder.cpp(746): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
      1>c:\users\tammie\desktop\sp4\base\source\meshbuilder.cpp(752): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
      1>c:\users\tammie\desktop\sp4\base\source\meshbuilder.cpp(758): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+=======
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\strategy.cpp(22): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+         SoundManager.cpp
+         shader.cpp
+         SceneManager2D.cpp
+         SceneManager.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\scenemanager.cpp(274): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\scenemanager.cpp(574): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         PlayState.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playstate.cpp(144): warning C4805: '==' : unsafe mix of type 'const int' and type 'bool' in operation
+         PlayInfo3PV.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(82): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(88): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(94): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(143): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(149): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(155): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(200): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(204): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(208): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(210): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(230): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(238): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(246): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playinfo3pv.cpp(254): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
+         PlayerInfo.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(80): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(86): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(145): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(151): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(230): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(237): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(244): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(246): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(269): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\playerinfo.cpp(300): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         PathFinding.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(17): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(23): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(37): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(38): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(42): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(43): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(72): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(100): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(112): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(150): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(183): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(203): warning C4018: '<' : signed/unsigned mismatch
+         Minimap.cpp
+         MeshBuilder.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\meshbuilder.cpp(746): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\meshbuilder.cpp(752): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\meshbuilder.cpp(758): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
          Mesh.cpp
          MenuState.cpp
          Map.cpp
@@ -68,6 +132,7 @@
          Compiling...
          LoadTGA.cpp
          LoadOBJ.cpp
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
          InstructionState.cpp
          HighscoreState.cpp
          HighscoreData.cpp
@@ -82,10 +147,17 @@
      1>c:\users\tammie\desktop\sp4\base\source\gridsystem.cpp(65): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
      1>c:\users\tammie\desktop\sp4\base\source\gridsystem.cpp(80): warning C4018: '<' : signed/unsigned mismatch
          Grid.cpp
+=======
+         Generating Code...
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\pathfinding.cpp(212): warning C4715: 'CPathFinding::NextPathPos' : not all control paths return a value
+         Compiling...
+         IntroState.cpp
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
          GoodiesFactory.cpp
          Goodies.cpp
          GameStateManager.cpp
          Enemy.cpp
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
      1>c:\users\tammie\desktop\sp4\base\source\enemy.cpp(28): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
      1>c:\users\tammie\desktop\sp4\base\source\enemy.cpp(34): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
      1>c:\users\tammie\desktop\sp4\base\source\enemy.cpp(40): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
@@ -99,12 +171,41 @@
          Camera.cpp
          Application.cpp
      1>c:\users\tammie\desktop\sp4\base\source\application.cpp(14): warning C4005: '_CRTDBG_MAP_ALLOC' : macro redefinition
+=======
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(28): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(34): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(40): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(41): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(51): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(57): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(63): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\enemy.cpp(69): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+         Character.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\character.cpp(53): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\character.cpp(59): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\character.cpp(63): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\character.cpp(79): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\character.cpp(95): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\character.cpp(111): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Camera3.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\camera3.cpp(416): warning C4244: '+=' : conversion from 'const double' to 'float', possible loss of data
+         Camera.cpp
+         Application.cpp
+     1>c:\users\angus_000\desktop\documents\sp4\base\source\application.cpp(14): warning C4005: '_CRTDBG_MAP_ALLOC' : macro redefinition
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
                  command-line arguments :  see previous definition of '_CRTDBG_MAP_ALLOC'
+         AI.cpp
          Generating Code...
        Link:
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tammie\Desktop\SP4\Debug\Base.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Tammie\Desktop\SP4\Debug /LIBPATH:"C:\Users\Tammie\Desktop\SP4\/glfw/lib-msvc100" /LIBPATH:C:\Users\Tammie\Desktop\SP4\/glew/lib /LIBPATH:C:\Users\Tammie\Desktop\SP4\/lua/lib Common.lib winmm.lib opengl32.lib glu32.lib glew32.lib glfw3.lib lua5.1.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tammie\Desktop\SP4\Debug\Base.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tammie\Desktop\SP4\Debug\Base.lib" /MACHINE:X86 Debug\Application.obj
+=======
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\angus_000\Desktop\Documents\SP4\Debug /LIBPATH:"C:\Users\angus_000\Desktop\Documents\SP4\/glfw/lib-msvc100" /LIBPATH:C:\Users\angus_000\Desktop\Documents\SP4\/glew/lib /LIBPATH:C:\Users\angus_000\Desktop\Documents\SP4\/irrklang/lib Common.lib winmm.lib opengl32.lib glu32.lib glew32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.lib" /MACHINE:X86 Debug\AI.obj
+         Debug\Application.obj
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
          Debug\Camera.obj
          Debug\Camera3.obj
+         Debug\Character.obj
          Debug\Enemy.obj
          Debug\GameStateManager.obj
          Debug\Goodies.obj
@@ -124,24 +225,41 @@
          Debug\Mesh.obj
          Debug\MeshBuilder.obj
          Debug\Minimap.obj
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
          Debug\OptionState.obj
          Debug\Player.obj
+=======
+         Debug\PathFinding.obj
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
          Debug\PlayerInfo.obj
          Debug\PlayInfo3PV.obj
          Debug\PlayState.obj
          Debug\Save.obj
          Debug\SceneManager2D.obj
          Debug\shader.obj
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
          Debug\SpriteAnimation.obj
+=======
+         Debug\SoundManager.obj
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
          Debug\Strategy.obj
          Debug\Strategy_Kill.obj
          Debug\TreasureChest.obj
          Debug\Utility.obj
-     1>Application.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     1>AI.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
      1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
          Base.vcxproj -> C:\Users\Tammie\Desktop\SP4\Debug\Base.exe
      1>Done Building Project "C:\Users\Tammie\Desktop\SP4\Base\Base.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
 Time Elapsed 00:00:21.25
+=======
+         Base.vcxproj -> C:\Users\angus_000\Desktop\Documents\SP4\Debug\Base.exe
+     1>Done Building Project "C:\Users\angus_000\Desktop\Documents\SP4\Base\Base.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.91
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd

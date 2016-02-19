@@ -1,5 +1,10 @@
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
 ﻿Build started 2/19/2016 2:00:59 PM.
      1>Project "C:\Users\Tammie\Desktop\SP4\Common\Common.vcxproj" on node 2 (Rebuild target(s)).
+=======
+﻿Build started 19/2/2016 2:32:34 PM.
+     1>Project "C:\Users\angus_000\Desktop\Documents\SP4\Common\Common.vcxproj" on node 2 (Build target(s)).
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _VARIADIC_MAX=10 /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source\MathUtility.cpp Source\MatrixStack.cpp Source\Mtx44.cpp Source\timer.cpp Source\Vector2.cpp Source\Vector3.cpp
          Vector3.cpp
@@ -10,15 +15,28 @@
          MathUtility.cpp
          Generating Code...
        Lib:
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Tammie\Desktop\SP4\Debug\Common.lib" /NOLOGO Debug\MathUtility.obj
+=======
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\angus_000\Desktop\Documents\SP4\Debug\Common.lib" /NOLOGO Debug\MathUtility.obj
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
          Debug\MatrixStack.obj
          Debug\Mtx44.obj
          Debug\timer.obj
          Debug\Vector2.obj
          Debug\Vector3.obj
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
          Common.vcxproj -> C:\Users\Tammie\Desktop\SP4\Debug\Common.lib
      1>Done Building Project "C:\Users\Tammie\Desktop\SP4\Common\Common.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
 Time Elapsed 00:00:03.02
+=======
+         Common.vcxproj -> C:\Users\angus_000\Desktop\Documents\SP4\Debug\Common.lib
+     1>Done Building Project "C:\Users\angus_000\Desktop\Documents\SP4\Common\Common.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.84
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd

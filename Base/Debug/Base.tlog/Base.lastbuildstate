@@ -1,2 +1,6 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
 Debug|Win32|C:\Users\Tammie\Desktop\SP4\|
+=======
+Debug|Win32|C:\Users\angus_000\Desktop\Documents\SP4\|
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd

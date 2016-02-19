@@ -4,6 +4,7 @@
 #include "SceneManager.h"
 #include "SceneManager2D.h"
 #include "timer.h"
+#include "SoundManager.h"
 
 //Include GLEW
 #include <GL/glew.h>
@@ -34,6 +35,8 @@ public:
 	static CPlayState* Instance() {
 		return &thePlayState;
 	}
+
+	CSoundManager Sound;
 
 protected:
 	CPlayState() { }

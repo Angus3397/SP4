@@ -120,10 +120,23 @@
     <ClCompile Include="Source\OptionState.cpp">
       <Filter>Game State Management</Filter>
     </ClCompile>
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
     <ClCompile Include="Source\Highscore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\HighscoreData.cpp">
+=======
+    <ClCompile Include="Source\AI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PathFinding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SoundManager.cpp">
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -215,6 +228,7 @@
     <ClInclude Include="Source\GameState.h">
       <Filter>Game State Management</Filter>
     </ClInclude>
+<<<<<<< 8b169c89971117782ab8bfe7ea6e22f749519790
     <ClInclude Include="Source\lua.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -249,6 +263,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\HighscoreData.h">
+=======
+    <ClInclude Include="Source\AI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PathFinding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SearchCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SoundManager.h">
+>>>>>>> d95952c3afd09e8ed98357adf57447fedc98dacd
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

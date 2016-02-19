@@ -36,6 +36,8 @@ void CPlayState::Init(const int width, const int height)
 		scene = new CSceneManager2D();	// Use this for 2D gameplay
 	#endif
 	scene->Init();
+
+	Sound.mainMenuBGM();
 }
 
 void CPlayState::Cleanup()
@@ -168,6 +170,7 @@ void CPlayState::Update(CGameStateManager* theGSM, const double m_dElapsedTime)
 {
 	// Update the scene
 	scene->Update(m_dElapsedTime);
+	Sound.adjustVol();
 }
 
 void CPlayState::Draw(CGameStateManager* theGSM)
